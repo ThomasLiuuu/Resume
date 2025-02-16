@@ -58,6 +58,15 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeEducation}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \parbox{0.75\textwidth}{\footnotesize\textit{#5}}
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -97,9 +106,10 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSubheading 
       {University of Waterloo}{Waterloo, Ontario}
       {Bachelor of Mathematics - Major in Statistics and Computational Mathematics}{Sep. 2022 -- Present}
+      %{Relevant Courses: Linear Models, Sampling and Experimental Design, Data Structures, Object-Oriented Software Development, Combinatorics and Optimization, Linear Algebra}
   \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
@@ -107,9 +117,9 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, SQL, R, C/C++, HTML/CSS, JavaScript, LaTeX, C\#, MATLAB, DAX} \\
-     \textbf{Frameworks}{: Numpy, Matplotlib, Pandas, TensorFlow, PyTorch, Scikit-learn, JSON, React.js, ASP.NET,} \\
+     \textbf{Frameworks}{: Numpy, Matplotlib, Pandas, TensorFlow, PyTorch, Scikit-learn, Flask, JSON, React.js, ASP.NET} \\
      \textbf{Developer Tools}{: Visual Studio, Power BI, Cloudera Machine Learning, Git, Excel, Bash} \\
-     \textbf{Databse}{: MySQL, Microsoft AZURE, Cloudera Operational Database, MongoDB, Salesforce}
+     \textbf{Database}{: MySQL, Microsoft AZURE, Cloudera Operational Database, Salesforce, MongoDB}
     }}
  \end{itemize}
 
@@ -121,29 +131,26 @@
       {\href{https://lifestylesunrooms.com/}{Lifestyle Home Products}}{Toronto, ON}
       \resumeItemListStart
         \resumeItem{Built dynamic dashboards by integrating \textbf{Salesforce} data with \textbf{Google Sheets} and \textbf{Google Data Studio}, providing real-time insights that improved decision-making for marketing and sales teams} 
-        \resumeItem{Developed and optimized APIs to connect \textbf{Salesforce} with \textbf{Zapier} and \textbf{Centah}, automating data transfers and reducing manual data entry by \textbf{80\%}}
-        \resumeItem{Presented analytical findings to senior management and cross-functional teams, translating complex data into actionable insights that enhanced campaign performance and customer targeting strategies}
-        % \resumeItem{}
+        \resumeItem{Developed and optimized API integrations with \textbf{Salesforce}, \textbf{Zapier}, and \textbf{Centah}, streamlining data workflows and reducing manual data entry by up to \textbf{80\%}, significantly improving efficiency}
+        \resumeItem{Designed and implemented data validation workflows to ensure data integrity, accuracy, and completeness within \textbf{Salesforce}, enhancing reporting reliability, sales forecasting, and business intelligence}
       \resumeItemListEnd
 
     \resumeSubheading
       {Data Analyst}{May. 2024 - Aug. 2024}
       {\href{https://www.olg.ca/en/home.html}{Ontario Lottery and Gaming Corporation}}{Toronto, ON}
       \resumeItemListStart
-        \resumeItem{Leveraged \textbf{Python} and libraries such as \textbf{Numpy}, \textbf{Pandas}, \textbf{Matplotlib} to perform post-campaign analysis, achieving a \textbf{20\%} increase in ROI by identifying key audience and optimizing marketing strategies}
-        \resumeItem{Streamlined data access and analysis for business teams by developing \textbf{Power BI} dashboards and \textbf{SQL} queries, reducing data request time by up to \textbf{90\%} and allowing faster, data-driven decision-making}
-        \resumeItem{Enhanced decision-making by developing automated weekly lottery and sports reports using \textbf{Python} and \textbf{Excel}, providing actionable insights into customer trends for managers and cross-functional teams}
-        \resumeItem{Partnered with Advanced Analytics team to design and implement the\textbf{North Star Matric}, improving customer targeting accuracy by minimum of \textbf{10\%} got promotions and driving enhanced campaign performance}
+        \resumeItem{Conducted post-campaign analysis using \textbf{Python} with \textbf{Numpy}, \textbf{Pandas}, and \textbf{Matplotlib}, identifying key audience segments and optimizing marketing strategies to drive a \textbf{20\%} increase in ROI}
+        \resumeItem{Constructed \textbf{Power BI} dashboards and \textbf{SQL} queries to streamline data access for business teams, reducing data request time by up to \textbf{90\%} and enabling faster, data-driven decision-making}
+        \resumeItem{Collaborated with the Advanced Analytics team to design and implement the \textbf{North Star Metric}, enhancing customer accuracy by at least \textbf{10\%} for promotions and improving overall campaign performance}
       \resumeItemListEnd
 
     \resumeSubheading
       {Full Stack Developer}{Sep. 2023 - Dec. 2023}
       {\href{https://www.sparklease.com/en/Home/Index}{SparkLease Inc.}}{Toronto, ON}
       \resumeItemListStart
-        \resumeItem{Designed and developed the user profile feature in WeChat Mini App using \textbf{React Native}, \textbf{XML}, \textbf{CSS}, and \textbf{JavaScript}, enabling users to edit and manage their posts seamlessly, optimizeing the process speed by \textbf{50\%}}
-        \resumeItem{Developed responsive PC and mobile websites with \textbf{ASP.NET}, \textbf{CSHTML}, \textbf{C\#}, and \textbf{JavaScript}, improving user navigation efficiency by \textbf{30\%} through a dynamic filter system and streamlined account management features}
-        \resumeItem{Designed and implemented robust \textbf{APIs} using \textbf{MVC} architecture, improving data handling efficiency and ensuring a consistent and optimized user experience across platforms}
-        \resumeItem{Built a recommendation algorithm using \textbf{C\#} and \textbf{SQL} on Microsoft Azure, increasing data retrieval speed by \textbf{30\%} and increasing recommendation accuracy by \textbf{15\%}, enhancing user engagmenet and satisfication}
+        \resumeItem{Designed and developed the user profile feature in WeChat Mini App using \textbf{React Native}, \textbf{XML}, \textbf{CSS}, and \textbf{JavaScript}, enabling seamless post management and optimizing process speed by \textbf{50\%}}
+        \resumeItem{Engineered responsive PC and mobile websites with \textbf{ASP.NET}, \textbf{CSHTML}, \textbf{C\#}, and \textbf{JavaScript}, enhancing user navigation by \textbf{30\%} through a dynamic filter system and improved account management}
+        \resumeItem{Created a recommendation algorithm using \textbf{C\#} and \textbf{SQL} on Microsoft Azure, increasing data retrieval speed by \textbf{30\%} and improving recommendation accuracy by \textbf{15\%}, leading to higher user satisfaction}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -151,18 +158,24 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\href{https://github.com/ThomasLiuuu/Side-Projects/tree/main/Stock-Forecast}{\underline{\textbf{Stock Forecast}}} $|$ \emph{Python}}{Apr. 2024 - May. 2024}
+      {\href{https://github.com/ThomasLiuuu/Projects/tree/main/Save\%20Money}{\underline{\textbf{Coffee Saver}} $|$ \emph{Python, JavaScript}}}{Jan. 2025 - Feb. 2025}
       \resumeItemListStart
-        \resumeItem{Developed an \textbf{LSTM-based neural network} to predict stock price trend, achieving an accuracy of \textbf{83\%} and outperforming traditional models by \textbf{15\%} }
-        \resumeItem{Utilized Python libraries such as \textbf{Numpy}, \textbf{Pandas}, and \textbf{TensorFlow} to preprocess and analyze historical stock data, identifying key features and trends for model training}
-        % \resumeItem{Enhanced model performance by implementing \textbf{dropout layers} and \textbf{batch normalization}, reducing overfitting and improving model generalization}
+        \resumeItem{Developed a full-stack web application using \textbf{Flask} and \textbf{React.js} to track coffee prices, calculate long-term expense, and integrate real-time interest rates from Bank of Canada API}
+        \resumeItem{Implemented database-driven price tracking using \textbf{MySQL}, enabling users to search, store and compare coffee prices while leveraging external APIs (Google Search \& financial data) for automated price retrieval}
       \resumeItemListEnd
 
-      \resumeProjectHeading
+    \resumeProjectHeading
+      {\href{https://github.com/ThomasLiuuu/Projects/tree/main/Stock-Forecast}{\underline{\textbf{Stock Forecast}}} $|$ \emph{Python}}{Apr. 2024 - May. 2024}
+      \resumeItemListStart
+        \resumeItem{Developed an \textbf{LSTM-based neural network} to predict stock price trend, achieving an accuracy of \textbf{83\%} and outperforming traditional models by \textbf{15\%} in overall trend forecasting performance}
+        \resumeItem{Utilized \textbf{Numpy}, \textbf{Pandas}, and \textbf{TensorFlow} to preprocess and analyze historical stock data, identifying key features and trends to enhance model training and prediction reliability}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
       {\href{https://github.com/ThomasLiuuu/Projects/tree/main/Watopoly}{\underline{\textbf{Watopoly (Variant of Monopoly)}}} $|$ \emph{C++}}{Jan. 2024 - Apr. 2024}
       \resumeItemListStart
-        \resumeItem{Implemented a Monopoly variant in \textbf{C++} using \textbf{Object-Oriented Programming} principles, incorporating unique gameplay rules, dynamic player interactions, and property management for an engaging user experience}
-        \resumeItem{Applied \textbf{OOP} to structure key components such as players, properties, and game board, ensuring modularity and scalability for future feature additions}
+        \resumeItem{Implemented a Monopoly variant in \textbf{C++} using \textbf{Object-Oriented Programming} principles, featuring unique gameplay rules, dynamic player interactions, and an intuitive property management system}
+        \resumeItem{Applied \textbf{OOP} to structure core components, including players, properties, and the game board, ensuring modular design, scalability, and maintainability for future feature additions}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
