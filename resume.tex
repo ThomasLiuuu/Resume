@@ -55,16 +55,15 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-11pt}
 }
 
-\newcommand{\resumeEducation}[5]{
+\newcommand{\resumeEducation}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-      \parbox{0.75\textwidth}{\footnotesize\textit{#5}}
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -97,29 +96,31 @@
 \begin{document}
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Thomas Liu} \\ \vspace{1pt}
+    \textbf{\Huge \scshape Thomas Liu} \\ \vspace{-1pt}
     \small 437-232-2668 $|$ \href{t33liu@uwaterloo.ca}{\underline{t33liu@uwaterloo.ca}} $|$ 
-    \faLinkedinSquare \href{https://www.linkedin.com/in/thomas-tian-yu-liu-a93206236/}{\underline{LinkedIn}} $|$
+    \faLinkedinSquare \href{https://www.linkedin.com/in/thomas-liu-a93206236/}{\underline{LinkedIn}} $|$
     \faGithub \href{https://github.com/ThomasLiuuu}{\underline{GitHub}}
 \end{center}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading 
-      {University of Waterloo}{Waterloo, Ontario}
-      {Bachelor of Mathematics - Major in Statistics and Computational Mathematics}{Sep. 2022 -- Present}
-      %{Relevant Courses: Linear Models, Sampling and Experimental Design, Data Structures, Object-Oriented Software Development, Combinatorics and Optimization, Linear Algebra}
+    \resumeEducation 
+      {University of Waterloo}{Sep. 2022 -- Present}
+      {Bachelor of Mathematics - Major in Statistics and Computational Mathematics}{Waterloo, ON}
+      \vspace{-3pt}
+      \small{Relevant Courses: Statistical Learning: Regression, Computational Inference, Statistical Analysis, Forecasting, Applied Linear Models, Sampling \& Experimental Design, Object-Oriented Programming, Data Types \& Structures}
   \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, SQL, R, C/C++, HTML/CSS, JavaScript, LaTeX, C\#, MATLAB, DAX} \\
-     \textbf{Frameworks}{: Numpy, Matplotlib, Pandas, TensorFlow, PyTorch, Scikit-learn, Flask, JSON, React.js, ASP.NET} \\
-     \textbf{Developer Tools}{: Visual Studio, Power BI, Cloudera Machine Learning, Git, Excel, Bash} \\
-     \textbf{Database}{: MySQL, Microsoft AZURE, Cloudera Operational Database, Salesforce, MongoDB}
+     \textbf{Languages}{: Python, SQL, R, C/C++, JavaScript, LaTeX, C\#, MATLAB, DAX} \\
+     \textbf{Data Tools}{: PowerBI, Excel, Snowflake, Git, AWS, Microsoft Azure, Looker/Data Studio, Google Analytics} \\
+     \textbf{Frameworks}{: Numpy, Matplotlib, Pandas, TensorFlow, PyTorch, Scikit-learn, JSON} 
+     %\textbf{Developer Tools}{: Visual Studio, Power BI, Cloudera Machine Learning, Git, Excel, Bash} \\
+     %\textbf{Database}{: Microsoft AZURE, Cloudera Operational Database, Salesforce, MongoDB, Snowflake, PostgreSQL} \\
     }}
  \end{itemize}
 
@@ -127,11 +128,20 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {Data Analyst}{Sep. 2025 - Dec. 2025}
+      {\href{https://www.super.com/}{Super.com}}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Leveraged \textbf{SQL} and \textbf{Python} to benchmark QL2 against Luminai for competitor insights, confirming QL2's superior data volume and accuracy with half the cost, leading to a strategic supplier transition}
+        \resumeItem{Led dbt model enhancements to incorporate new metasearch data sources, enabling cross-channel cMAB analysis and data-driven strategy planning across travel acquisition channels}
+        \resumeItem{Analyzed LLM-based room-matching results using \textbf{SQL} and collaborated closely with engineering to tune the model, resolving customer-reported mismatches and increasing overall revenue by \textbf{1.5\%}}
+      \resumeItemListEnd 
+
+    \resumeSubheading
       {Data Analyst}{Jan. 2025 - Apr. 2025}
       {\href{https://lifestylesunrooms.com/}{Lifestyle Home Products}}{Toronto, ON}
       \resumeItemListStart
         \resumeItem{Built dynamic dashboards by integrating \textbf{Salesforce} data with \textbf{Google Sheets} and \textbf{Looker Studio}, enabling real-time insights that supported data-driven decision-making across business teams} 
-        \resumeItem{Established a stable \textbf{POST API} connection to securely transmit customer data from \textbf{Salesforce} to third-part system Bellastone, ensuring reliable and efficient cross-platform data exchange}
+        \resumeItem{Established a stable \textbf{POST API} connection to securely transmit customer data from \textbf{Salesforce} to third-party system Bellastone, ensuring reliable and efficient cross-platform data exchange}
         \resumeItem{Implemented data validation workflows to ensure data integrity, accuracy, and completeness within \textbf{Salesforce}, enhancing reporting reliability, sales forecasting, and business intelligence processes}
       \resumeItemListEnd
 
@@ -157,12 +167,12 @@
 %-----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {\href{https://github.com/ThomasLiuuu/Projects/tree/main/Save\%20Money}{\underline{\textbf{Coffee Saver}} $|$ \emph{Python, JavaScript}}}{Jan. 2025 - Feb. 2025}
-      \resumeItemListStart
-        \resumeItem{Developed a full-stack web application using \textbf{Flask} and \textbf{React.js} to track coffee prices, calculate long-term expense, and integrate real-time interest rates from Bank of Canada API}
-        \resumeItem{Implemented database-driven price tracking using \textbf{MySQL}, enabling users to search, store and compare coffee prices while leveraging external APIs (Google Search \& financial data) for automated price retrieval}
-      \resumeItemListEnd
+    %\resumeProjectHeading
+    %  {\href{https://github.com/ThomasLiuuu/Projects/tree/main/Save\%20Money}{\underline{\textbf{Coffee Saver}} $|$ \emph{Python, JavaScript}}}{Jan. 2025 - Feb. 2025}
+    %  \resumeItemListStart
+    %    \resumeItem{Developed a full-stack web application using \textbf{Flask} and \textbf{React.js} to track coffee prices, calculate long-term expense, and integrate real-time interest rates from Bank of Canada API}
+    %    \resumeItem{Implemented database-driven price tracking using \textbf{MySQL}, enabling users to search, store and compare coffee prices while leveraging external APIs (Google Search \& financial data) for automated price retrieval}
+    %  \resumeItemListEnd
 
     \resumeProjectHeading
       {\href{https://github.com/ThomasLiuuu/Projects/tree/main/Stock\%20Forcast}{\underline{\textbf{Stock Forecast}}} $|$ \emph{Python}}{Apr. 2024 - Mar. 2025}
@@ -171,12 +181,12 @@
         \resumeItem{Utilized \textbf{Numpy}, \textbf{Pandas}, and \textbf{TensorFlow} to preprocess and analyze historical stock data, identifying key features and trends to enhance model training and prediction reliability}
       \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\href{https://github.com/ThomasLiuuu/Projects/tree/main/Watopoly}{\underline{\textbf{Watopoly (Variant of Monopoly)}}} $|$ \emph{C++}}{Jan. 2024 - Apr. 2024}
-      \resumeItemListStart
-        \resumeItem{Implemented a Monopoly variant in \textbf{C++} using \textbf{Object-Oriented Programming} principles, featuring unique gameplay rules, dynamic player interactions, and an intuitive property management system}
-        \resumeItem{Applied \textbf{OOP} to structure core components, including players, properties, and the game board, ensuring modular design, scalability, and maintainability for future feature additions}
-      \resumeItemListEnd
+    %\resumeProjectHeading
+    %  {\href{https://github.com/ThomasLiuuu/Projects/tree/main/Watopoly}{\underline{\textbf{Watopoly (Variant of Monopoly)}}} $|$ \emph{C++}}{Jan. 2024 - Apr. 2024}
+    %  \resumeItemListStart
+    %    \resumeItem{Implemented a Monopoly variant in \textbf{C++} using \textbf{Object-Oriented Programming} principles, featuring unique gameplay rules, dynamic player interactions, and an intuitive property management system}
+    %    \resumeItem{Applied \textbf{OOP} to structure core components, including players, properties, and the game board, ensuring modular design, scalability, and maintainability for future feature additions}
+    %  \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
