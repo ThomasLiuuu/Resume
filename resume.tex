@@ -39,7 +39,7 @@
   \vspace{-5pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure that generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -53,16 +53,16 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{#1} & #2 \\[-3pt]
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-11pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeEducation}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \small#3 & \small #4 \\
     \end{tabular*}\vspace{-2pt}
 }
 
@@ -97,7 +97,7 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Thomas Liu} \\ \vspace{-1pt}
-    \small 437-232-2668 $|$ \href{t33liu@uwaterloo.ca}{\underline{t33liu@uwaterloo.ca}} $|$ 
+    \small 437-232-2668 $|$ \href{mailto:t33liu@uwaterloo.ca}{\underline{t33liu@uwaterloo.ca}} $|$ 
     \faLinkedinSquare \href{https://www.linkedin.com/in/thomas-liu-a93206236/}{\underline{LinkedIn}} $|$
     \faGithub \href{https://github.com/ThomasLiuuu}{\underline{GitHub}}
 \end{center}
@@ -107,55 +107,64 @@
   \resumeSubHeadingListStart
     \resumeEducation 
       {University of Waterloo}{Sep. 2022 -- Present}
-      {Bachelor of Mathematics - Major in Statistics and Computational Mathematics}{Waterloo, ON}
-      \vspace{-3pt}
-      \small{Relevant Courses: Statistical Learning: Regression, Computational Inference, Statistical Analysis, Forecasting, Applied Linear Models, Sampling \& Experimental Design, Object-Oriented Programming, Data Types \& Structures}
+      {\textit{Bachelor of Mathematics - Major in Statistics and Computational Mathematics}}{Waterloo, ON}
+      \vspace{-8pt}
+      \begin{itemize}[leftmargin=15pt]
+        \item \small{Relevant Courses: Statistical Learning: Advanced Regression, Neural Networks, Computational Inference, Statistical Analysis, Forecasting, Applied Linear Models, Sampling \& Experimental Design, Object-Oriented Programming}
+      \end{itemize}
   \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
+\vspace{-15pt}
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, SQL, R, C/C++, JavaScript, LaTeX, C\#, MATLAB, DAX} \\
+     \textbf{Languages}{: Python, SQL, R, C, C++, JavaScript, LaTeX, C\#, MATLAB, DAX} \\
      \textbf{Data Tools}{: PowerBI, Excel, Snowflake, Git, AWS, Microsoft Azure, Looker/Data Studio, Google Analytics} \\
-     \textbf{Frameworks}{: Numpy, Matplotlib, Pandas, TensorFlow, PyTorch, Scikit-learn, JSON} 
+     \textbf{Frameworks}{: Numpy, Pandas, Matplotlib, TensorFlow, PyTorch, Scikit-learn, XGBoost, JSON} 
      %\textbf{Developer Tools}{: Visual Studio, Power BI, Cloudera Machine Learning, Git, Excel, Bash} \\
      %\textbf{Database}{: Microsoft AZURE, Cloudera Operational Database, Salesforce, MongoDB, Snowflake, PostgreSQL} \\
     }}
  \end{itemize}
 
 %-----------EXPERIENCE-----------
+\vspace{-15pt}
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Data Analyst}{Sep. 2025 - Dec. 2025}
+       {Incoming Data Analyst (Summer 2026)} {May 2026 -- Aug. 2026}
+       {\href{https://www.rocketcompanies.com/}{Rocket}}{Toronto, ON}
+       \vspace{-1pt}
+    
+    \resumeSubheading
+      {Data Analyst}{Sep. 2025 -- Dec. 2025}
       {\href{https://www.super.com/}{Super.com}}{Toronto, ON}
       \resumeItemListStart
-        \resumeItem{Leveraged \textbf{SQL} and \textbf{Python} to benchmark QL2 against Luminai for competitor insights, confirming QL2's superior data volume and accuracy with half the cost, leading to a strategic supplier transition}
-        \resumeItem{Led dbt model enhancements to incorporate new metasearch data sources, enabling cross-channel cMAB analysis and data-driven strategy planning across travel acquisition channels}
+        \resumeItem{Leveraged \textbf{SQL} and \textbf{Python} to benchmark QL2 against Luminai for competitor insights, confirming QL2's superior data volume and accuracy with \textbf{half the cost}, leading to a strategic supplier transition}
+        \resumeItem{Led dbt model enhancements to incorporate new metasearch data sources, enabling robust cross-channel cMAB analysis and optimized data-driven strategy planning across travel acquisition channels}
         \resumeItem{Analyzed LLM-based room-matching results using \textbf{SQL} and collaborated closely with engineering to tune the model, resolving customer-reported mismatches and increasing overall revenue by \textbf{1.5\%}}
       \resumeItemListEnd 
 
     \resumeSubheading
-      {Data Analyst}{Jan. 2025 - Apr. 2025}
+      {Data Analyst}{Jan. 2025 -- Apr. 2025}
       {\href{https://lifestylesunrooms.com/}{Lifestyle Home Products}}{Toronto, ON}
       \resumeItemListStart
-        \resumeItem{Built dynamic dashboards by integrating \textbf{Salesforce} data with \textbf{Google Sheets} and \textbf{Looker Studio}, enabling real-time insights that supported data-driven decision-making across business teams} 
-        \resumeItem{Established a stable \textbf{POST API} connection to securely transmit customer data from \textbf{Salesforce} to third-party system Bellastone, ensuring reliable and efficient cross-platform data exchange}
-        \resumeItem{Implemented data validation workflows to ensure data integrity, accuracy, and completeness within \textbf{Salesforce}, enhancing reporting reliability, sales forecasting, and business intelligence processes}
+        \resumeItem{Built comprehensive, dynamic dashboards by integrating \textbf{Salesforce} data with \textbf{Google Sheets} and \textbf{Looker Studio}, enabling real-time insights that supported data-driven decision-making across business teams} 
+        \resumeItem{Established a stable \textbf{POST API} connection to securely transmit real-time customer data from \textbf{Salesforce} to third-party system Bellastone, ensuring reliable and efficient cross-platform data exchange}
+        \resumeItem{Implemented automated data validation workflows within \textbf{Salesforce} to ensure up to \textbf{98\%} data accuracy and completeness, enhancing reporting reliability, sales forecasting, and business intelligence processes}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Data Analyst}{May. 2024 - Aug. 2024}
+      {Data Analyst}{May. 2024 -- Aug. 2024}
       {\href{https://www.olg.ca/en/home.html}{Ontario Lottery and Gaming Corporation}}{Toronto, ON}
       \resumeItemListStart
         \resumeItem{Conducted post-campaign analysis using \textbf{Python} with \textbf{Numpy}, \textbf{Pandas}, and \textbf{Matplotlib}, identifying key audience segments and optimizing marketing strategies to drive a \textbf{20\%} increase in ROI}
-        \resumeItem{Constructed \textbf{Power BI} dashboards and \textbf{SQL} queries to streamline data access for business teams, reducing data request time by up to \textbf{90\%} and enabling faster, data-driven decision-making}
-        \resumeItem{Collaborated with the Advanced Analytics team to design and implement the \textbf{North Star Metric}, enhancing customer accuracy by at least \textbf{10\%} for promotions and improving overall campaign performance}
+        \resumeItem{Constructed interactive \textbf{PowerBI} dashboards and \textbf{SQL} queries to streamline data access for business teams, reducing data request time by up to \textbf{90\%} and enabling faster, data-driven decision-making}
+        \resumeItem{Collaborated with the Advanced Analytics team to implement the \textbf{North Star Metric}, enhancing customer targeting accuracy by at least \textbf{10\%} for promotions and improving overall campaign performance}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Full Stack Developer}{Sep. 2023 - Dec. 2023}
+      {Full Stack Developer}{Sep. 2023 -- Dec. 2023}
       {\href{https://www.sparklease.com/en/Home/Index}{SparkLease Inc.}}{Toronto, ON}
       \resumeItemListStart
         \resumeItem{Designed and developed the user profile feature in WeChat Mini App using \textbf{React Native}, \textbf{XML}, \textbf{CSS}, and \textbf{JavaScript}, enabling seamless post management and optimizing process speed by \textbf{50\%}}
@@ -165,8 +174,18 @@
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
+\vspace{-15pt}
 \section{Projects}
   \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\href{https://github.com/ThomasLiuuu/NBA-Win-Probability-Simulator}{{\textbf{NBA Win Probability Simulator}}} $|$ \emph{Python, XGBoost, Scikit-Learn, Flask, Pandas, SQLite}}{Mar. 2026 - Apr. 2026}
+      \resumeItemListStart
+        \resumeItem{Build a comprehensive and scalable ML pipeline using \textbf{XGBoost} and \textbf{Logistic Regression} to predict NBA game outcomes across 5 seasons, achieving \textbf{66.9\%} accuracy and outperforming the baseline predictor by \textbf{21\%}}
+        %\resumeItem{Built an end-to-end ML pipeline to predict NBA game outcomes, training XGBoost and Logistic Regression models on 5,993 historical games across 5 seasons with 73 engineered features, achieving 66.9\% accuracy and a 0.607 log-loss, outperforming the home-team baseline predictor by 21\%}
+        \resumeItem{Engineered 73 complex game and player performance features using \textbf{Pandas} and \textbf{Scikit-Learn}, and implemented \textbf{SQLite} caching to efficiently process 5,400+ API requests without hitting rate limits}
+        %\resumeItem{Engineered a 7-factor feature system using Pandas and Scikit-Learn, incorporating team records, offensive/defensive ratings, playstyle clustering, player rotation analysis, and a Gradient Boosting season-target classifier on 150 labeled samples, with SQLite caching to handle NBA API rate limits across 5,400+ API calls}
+      \resumeItemListEnd
+  
     %\resumeProjectHeading
     %  {\href{https://github.com/ThomasLiuuu/Projects/tree/main/Save\%20Money}{\underline{\textbf{Coffee Saver}} $|$ \emph{Python, JavaScript}}}{Jan. 2025 - Feb. 2025}
     %  \resumeItemListStart
@@ -174,12 +193,12 @@
     %    \resumeItem{Implemented database-driven price tracking using \textbf{MySQL}, enabling users to search, store and compare coffee prices while leveraging external APIs (Google Search \& financial data) for automated price retrieval}
     %  \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\href{https://github.com/ThomasLiuuu/Projects/tree/main/Stock\%20Forcast}{\underline{\textbf{Stock Forecast}}} $|$ \emph{Python}}{Apr. 2024 - Mar. 2025}
-      \resumeItemListStart
-        \resumeItem{Developed an \textbf{LSTM-based neural network} to predict stock price trend, achieving an accuracy of \textbf{83\%} and outperforming traditional models by \textbf{15\%} in overall trend forecasting performance}
-        \resumeItem{Utilized \textbf{Numpy}, \textbf{Pandas}, and \textbf{TensorFlow} to preprocess and analyze historical stock data, identifying key features and trends to enhance model training and prediction reliability}
-      \resumeItemListEnd
+    %\resumeProjectHeading
+    %  {\href{https://github.com/ThomasLiuuu/Projects/tree/main/Stock\%20Forcast}{\underline{\textbf{Stock Forecast}}} $|$ \emph{Python, TensorFlow, Numpy, Pandas, Matplotlib}}{Apr. 2024 -- Mar. 2025}
+    %  \resumeItemListStart
+    %    \resumeItem{Developed an \textbf{LSTM-based neural network} to predict stock price trends, achieving an accuracy of \textbf{83\%} and outperforming traditional models by \textbf{15\%} in overall trend forecasting performance}
+    %    \resumeItem{Utilized \textbf{Numpy}, \textbf{Pandas}, and \textbf{TensorFlow} to preprocess and analyze historical stock data, identifying key features and trends to enhance model training and prediction reliability}
+    %  \resumeItemListEnd
 
     %\resumeProjectHeading
     %  {\href{https://github.com/ThomasLiuuu/Projects/tree/main/Watopoly}{\underline{\textbf{Watopoly (Variant of Monopoly)}}} $|$ \emph{C++}}{Jan. 2024 - Apr. 2024}
